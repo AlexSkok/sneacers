@@ -1,0 +1,107 @@
+.content {
+  &_box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    @media (max-width: 870px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 670px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+.card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #f3f3f3;
+  border-radius: 40px;
+  padding: 20px 30px 22px;
+  line-height: 17px;
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+  &:hover {
+    border: 1px solid #f8f8f8;
+    box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+  }
+  &_img {
+    width: 133px;
+    height: 112px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 14px;
+  }
+  &_title {
+    margin-bottom: 14px;
+  }
+  &_buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 13px;
+      text-transform: uppercase;
+      color: #bdbdbd;
+    }
+  }
+
+  &_select,
+  &_like {
+    position: relative;
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid #f2f2f2;
+    cursor: pointer;
+    box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.2);
+    img {
+      position: absolute;
+      display: block;
+      width: 11px;
+      height: 11px;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+    }
+  }
+  span {
+    font-weight: 700;
+  }
+}
+.select_active {
+  background: linear-gradient(180deg, #89f09c 0%, #3cc755 100%);
+  position: relative;
+  box-sizing: border-box;
+  min-width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid #f2f2f2;
+  cursor: pointer;
+  box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.2);
+  img {
+    position: absolute;
+    display: block;
+    width: 11px;
+    height: 11px;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+}
+.position {
+  position: absolute;
+  z-index: 100;
+}
+.comlete_box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.card_complete {
+  width: auto;
+}

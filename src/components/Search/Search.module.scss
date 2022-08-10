@@ -1,0 +1,36 @@
+.search {
+  display: flex;
+  border: 1px solid #f3f3f3;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  width: 214px;
+  height: 45px;
+  padding: 0 18px;
+  img {
+    width: 15px;
+    height: 15px;
+  }
+  input {
+    border: none;
+    outline: none;
+    height: 15px;
+    padding: 0;
+  }
+}
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  &_header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  &_title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
